@@ -1,0 +1,3 @@
+void Goto(){
+    return "goto"
+;}
