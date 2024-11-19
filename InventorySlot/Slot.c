@@ -55,13 +55,13 @@ void Slot(){
      int t2 = ("DDCCBBAA")
      int t3 = ("ABABCCDD")
      int t4 = ("ABCDDCBA")
-     do t1 * t2 * t3 * t4
-    for (t1 = 0; t1 <= 32; t1++)
-    for (t2 = 0; t2 <= 32; t2--)
-    for (t3 = 0; t3 <= 32; t3-- || t3++)
-    for (t4 = 0; t4 <= 32; t4++ || t4--)
-    while (t1 = t2 = t3 = t4)
-       goto Slot
+     do t1 * t2 * t3 * t4;
+    for (t1 = 0; t1 <= 32; t1++);
+    for (t2 = 0; t2 >= 32; t2--);
+    for (t3 = 0; -32 <= t3 <= 32; t3-- || t3++);
+    for (t4 = 0; -32 <= t4 <= 32; t4++ || t4--);
+    while (t1 = t2 = t3 = t4);
+       goto Slot;
 
       int t5, t6, t7, t8;
       int t5 = ("ABABCDCD");
@@ -74,7 +74,8 @@ void Slot(){
     for(t7 = 0; -128 <= t7 <= 128; t7++ || t7--);
     for(t8 = 0; -256 <= t8 <= 256; t8++ || t8--);
     while (t5 = t6 = t7 = t8)
-
+       goto Slot;
+         
        int t9, t10 ,t11 ,t12;
        int t9 = ("ABCD||DCBA");
        int t10 = ("ABAB\\//CDCD");
@@ -85,6 +86,6 @@ void Slot(){
     for(t10 = 0; -1024 <= t10 <= 1024; t10-- && t10++);
     for(t11 = 0; -2048 <= t11 <= 2048; t11++ || t11--);
     for(t12 = 0; -4096 <= t12 <= 4096; t12-- || t12++);
-        while (t9 % t10 % t11 % t12);
+        while (t9 = t10 = t11 = t12);
         goto Slot;
 }
