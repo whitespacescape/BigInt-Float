@@ -1,6 +1,6 @@
 #include "../R/rst7.c"
 #include "../crak/opq.c"
-void returnnnnnnn(){
+void returnnnnnn(){
     char www;
     double asin , acos;
     int t9, t10;
