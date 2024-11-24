@@ -1,5 +1,5 @@
 #include "../R/rst369.c"
-void sin(){
+void returnnnnnnn(){
     char www;
     double sin , cos;
     int t11, t12;
